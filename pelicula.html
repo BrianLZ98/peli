@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="pelicula.css"
+</head>
+<body>
+    <header>
+        <h1>Recomendación de Película</h1>
+        <nav>
+            <ul>
+                <li><a href="#recomendacion">Recomendación</a></li>
+                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="recomendacion">
+        <h2>Recomendación</h2>
+        <img src="imagenes/gladiador.jpg" alt="Póster de la película" height="200">
+        <p>Te recomiendo la película "Gladiador". Es una película epica del género péplum (tambien conocido popularmente como espada y sandalia) y acción dirigida por Ridley Scott y protagonizada por Russell Crowe, Joaquin Phoenix y Connie Nielsen . ¡No te la puedes perder!</p>
+    </section>
+
+    <section id="trailer">
+        <h2>Trailer</h2>
+        <video src="imagenes/GLADIATOR _ Official Trailer _ Paramount Movies.mp4" controls></video>
+    </section>
+
+    <section id="formulario">
+        <h2>Formulario de Opinión</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <p>Género favorito:</p>
+            <input type="radio" id="accion" name="genero" value="accion">
+            <label for="accion">Acción</label>
+            <input type="radio" id="péplum" name="genero" value="péplum">
+            <label for="péplum">Péplum</label>
+            <input type="radio" id="drama" name="genero" value="drama">
+            <label for="drama">Drama</label>
+
+            <p>Actores favoritos:</p>
+            <input type="checkbox" id="actor1" name="actores" value="actor1">
+            <label for="actor1">Russell Crowe</label>
+            <input type="checkbox" id="actor2" name="actores" value="actor2">
+            <label for="actor2">Joaquin Phoenix</label>
+            <input type="checkbox" id="actor3" name="actores" value="actor3">
+            <label for="actor3">Connie Nielsen</label>
+
+            <label for="opinion">Opinión:</label>
+            <textarea id="opinion" name="opinion" rows="4" cols="50"></textarea>
+
+            <label for="puntuacion">Puntuación (1-10):</label>
+            <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contacto: zapatabrian51@gmail.com</p>
+    </footer>
+</body>
+</html>
